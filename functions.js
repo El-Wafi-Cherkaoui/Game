@@ -16,6 +16,17 @@ function Affichage(word){
      document.body.append(btn)
     
 }
-Affichage("ASadsAS")
 
+function generate_word(){
+    let words = [
+        "elwafi",
+        "sife",
+        "hamdi",
+        "jaj"
+    ]
+    let randomWord = ""
 
+    randomWord = words[Math.floor(Math.random()*words.length)]
+
+    return randomWord
+}

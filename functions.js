@@ -42,3 +42,17 @@ function generate_word(){
 
     return randomWord
 }
+function verify_answer(answer) {
+    // console.log('answer', answer);
+    if(answer == genrated_word){
+        return true
+    }
+    else{
+        false
+    }
+}
+function fill_next(correct_answer, tries) {
+    let inputs = document.querySelectorAll('input')
+    tries += 1
+    inputs[tries].value = correct_answer[correct_answer[tries]]
+}

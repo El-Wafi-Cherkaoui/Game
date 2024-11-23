@@ -42,9 +42,7 @@ function Affichage(word, data_cont, tries){
      btn.onclick = ()=>{
         let answer_is_correct = verify_answer(get_data(), word)
         
-         if(word.length== tries.tries+1){
-            console.log('lost');
-            
+         if(word.length== tries.tries+1){            
             youlose()    
         }
         else if(answer_is_correct){
@@ -99,5 +97,7 @@ function youlose() {
     alert('You Lose -- No guess')
 
 }
+     
+
 
 export{generate_word, Affichage}

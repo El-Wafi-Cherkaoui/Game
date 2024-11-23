@@ -70,5 +70,7 @@ function fill_next(correct_answer, tries_counter) {
     inputs.value = correct_answer[tries_counter.tries]
 }
 
+     
+
 
 export{generate_word, Affichage}
